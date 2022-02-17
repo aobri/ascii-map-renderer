@@ -1,6 +1,6 @@
 package com.aobri.service;
 
-import com.aobri.model.PostalCoordinates;
+import com.aobri.model.GeographicCoordinates;
 
 import java.util.List;
 
@@ -8,11 +8,13 @@ public interface CsvService {
 
     void initService(String csvFilePath);
 
-    PostalCoordinates getNextCoordinates();
+    GeographicCoordinates getNextCoordinates();
 
-    List<PostalCoordinates> getNextKCoordinates(int k);
+    List<GeographicCoordinates> getNextKCoordinates(int k);
 
     boolean isAvailable();
+
+    boolean hasNext();
 
     void close();
 }
