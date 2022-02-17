@@ -44,5 +44,9 @@ public class Main {
             }
         }
         renderingService.renderAsciiText();
+
+        // TODO: organize exception handling
+        // TODO: centralize constants in one class
+        // TODO: revise documentation
     }
 }
